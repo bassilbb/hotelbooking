@@ -1,0 +1,206 @@
+.hotel2{
+    height: 320px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 15px 15px 15px 15px;
+}
+
+.hotel3{
+    height: 320px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 15px 15px 15px 15px;
+}
+
+
+.hotel4{
+    height: 320px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 15px 15px 15px 15px;
+}
+
+.hotel5{
+    height: 320px;
+    width:  400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 15px 15px 15px 15px;
+}
+
+.hotel6{
+    height: 320px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+}
+
+.hotel7{
+    height: 320px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    
+}
+.hotel10{
+    height: 600px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    
+    
+}
+
+
+.carousel1{
+    height: 70px;
+    width: 100%;
+    
+    
+
+}
+.carousel2{
+    height: 70px;
+    width: 100%;
+    
+    
+
+}
+.carousel3{
+    height: 70px;
+    width: 100%;
+    
+    
+
+}
+
+.form{
+
+        width: 300px;
+        height: 450px;
+        margin: auto;
+         position: relative;
+         padding: 10px;     
+       
+}
+.form{
+
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    position: relative;  
+     padding: 10px; 
+   
+}
+.tete{
+    height: 150px;
+    width: 100%;
+    background-image: url("images/header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    } 
+    
+.boo{
+    height: 150px;
+    width: 100%;
+    background-image: url('images/header3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+ .bee{
+    height: 300px;
+    width: 100%;
+    background-image: url('images/real.jpg');
+    background-image: no-repeat;
+    background-size: cover ; 
+    
+} 
+
+.bbb{
+    height: 300px;
+    width: 100%;
+    background-image: url('images/luxury.jpg');
+    background-image: no-repeat;
+    background-size: cover ;
+} 
+
+
+.card{
+    margin: 40px 40px 40px 40px;
+
+}
+
+.card3{
+    height: 500px;
+    width:  1235px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px
+    
+}
+
+.paladium{
+    text-align: center;
+}
+
+.form1{
+    height: 450px;
+    width: 600px;
+    background-color:pink;
+    
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+    margin: auto;
+    padding-top: 8px;
+    
+}
+  .form3{ 
+    height: 500px;
+    width: 600px;
+     background-color:yellowgreen; 
+    
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+    margin: auto;
+    padding-top: 8px;
+     
+ }   
+
+
+ control-label{ 
+ font-size: 4rem;
+}  
+
+*{
+   background-image: url("/images/hotel10.jpg"); 
+}
