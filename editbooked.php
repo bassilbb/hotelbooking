@@ -26,7 +26,7 @@ include('includes/navbar.php');
     	<div class="row">
 	
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
-                        <h2>Clients Reservation Booking Form</h2>
+                        <h2> Reschedule Clients Reservation Form</h2>
                         </div>
                         </div>
 	                <div class="row">
@@ -69,12 +69,12 @@ include('includes/navbar.php');
                                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
                                         </div>
                                     </div> 
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label required" for="numberofpersons">Number of Persons:</label>
                                             <div class="select">
                                                 <select id="numberofpersons" name="edit_numberofpersons"  class="form-control">
-                                                    <option value="<?php echo $row['numberofpersons']  ?>"><?php echo $row['numberofpersons']  ?></option>
+                                                    <option value="< echo $row['numberofpersons']  ?>">< echo $row['numberofpersons']  ?></option>
                                                     <option value="01">01</option>
                                                     <option value="02">02</option>
                                                     <option value="03">03</option>
@@ -83,13 +83,13 @@ include('includes/navbar.php');
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    </div> -->
+                                    <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label required" for="select">Rooms-Budgets</label>
                                             <div class="select">
-                                                <select id="budgets" name="edit_budgets" value="<?php echo $row['budgets']  ?>" class="form-control">
-                                                <option value="<?php echo $row['budgets']  ?>"><?php echo $row['budgets']  ?></option>
+                                                <select id="budgets" name="edit_budgets" value="< echo $row['budgets']  ?>" class="form-control">
+                                                <option value="< echo $row['budgets']  ?>">< echo $row['budgets']  ?></option>
 
                                                     <option value="">select rooms</option>
                                                     <option value="standard roon">Standard 1 to 2 Guest</option>
@@ -100,52 +100,52 @@ include('includes/navbar.php');
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30">
-                                        <h4 class="tour-form-title"></h4>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30"> -->
+                                        <!-- <h4 class="tour-form-title"></h4>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="firstname">Frst Name</label>
-                                            <input id="firstname" type="text" name="edit_firstname" value="<?php echo $row['firstname']  ?>" placeholder="" class="form-control" required>
+                                            <input id="firstname" type="text" name="edit_firstname" value="< echo $row['firstname']  ?>" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="lastname">Last Name</label>
-                                            <input id="lastname" type="text" name="edit_lastname" value="<?php echo $row['lastname']  ?>" placeholder="" class="form-control" required>
+                                            <input id="lastname" type="text" name="edit_lastname" value="< echo $row['lastname']  ?>" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
-                        
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                         -->
+                                    <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="email"> Email</label>
-                                            <input id="email" type="text" name="edit_email" value="<?php echo $row['email']  ?>" placeholder="" class="form-control" required>
+                                            <input id="email" type="text" name="edit_email" value="<$row['email']  ?>" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="phone"> Phone</label>
-                                            <input id="phone" type="text" name="edit_phone" value="<?php echo $row['phone']  ?>" placeholder="" class="form-control" required>
+                                            <input id="phone" type="text" name="edit_phone" value="< $row['phone']  ?>" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="country">Country</label>
-                                            <input id="country" type="text" name="edit_country" value="<?php echo $row['country']  ?>" placeholder="" class="form-control" required>
+                                            <input id="country" type="text" name="edit_country" value="< echo $row['country']  ?>" placeholder="" class="form-control" required>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                    </div> -->
+                                    <!-- <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="city">City</label>
-                                            <input id="city" type="text" name="edit_city" value="<?php echo $row['city']  ?>" placeholder="" class="form-control" required>
+                                            <input id="city" type="text" name="edit_city" value="< echo $row['city']  ?>" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="zipcode">Zipcode</label>
-                                            <input id="zipcode" type="text" name="edit_zipcode" value="<?php echo $row['zipcode']  ?>" placeholder  ="" class="form-control"  size="1" required>
-                                        </div>
-                                    </div>
+                                            <input id="zipcode" type="text" name="edit_zipcode" value="<echo $row['zipcode']  ?>" placeholder  ="" class="form-control"  size="1" required>
+                                        </div> -->
+                                    <!-- </div> -->
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="roomrequirements"> Room Requirements</label>

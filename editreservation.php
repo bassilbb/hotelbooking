@@ -105,7 +105,7 @@ ORDER BY register.id";
             <td>
               <form action="editbooked.php" method="POST">
                 <input type="hidden" name="editid" value="<?php echo  $row["id"]; ?>">
-              <button type="submit" name="editbtn" class="badge badge-success p-3">Editbk</a>
+              <button type="submit" name="editbtn" class="badge badge-success p-3">Reschedule</a>
              </form>
               </td>
               <td>

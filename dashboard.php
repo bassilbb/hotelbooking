@@ -47,8 +47,8 @@
                         <li><a href="rooms.php">Rooms</a></li>
                         <li><a href="#"> Administrator Profile</a>
                             <ul class="drop-menu">
-                                <li><a href="adregisteration.php">Admin Registration</a></li>
                                 <li><a href="adminlogin.php">Admin Login</a></li>
+                                <li><a href="adregisteration.php"></a></li>
                                 <li><a href="services.php"></a></li>
                             </ul>
                         </li>

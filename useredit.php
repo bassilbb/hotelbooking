@@ -32,7 +32,7 @@ include('includes/navbar2.php');
 
                         <form action="userupdate.php" method="POST" >
                         <input type="hidden" name="edit_id" value="<?php echo $row['id'] ?>" class="form-control" placeholder="Enter id"> 
-                        <label>name</label>
+                        <label>Name</label>
                         <input type="text" name="edit_name" value="<?php echo $row['name'] ?>"  class="form-control" placeholder="Enter name">
                     </div>
                     <div class="form-group">
@@ -43,6 +43,13 @@ include('includes/navbar2.php');
                     <div class="form-group">
                         <label>Password</label>
                         <input type="text" name="edit_password" value="<?php echo $row['password'] ?>" class="form-control" placeholder="Enter Password">
+                    </div>
+                    <div class="form-group">
+                        <label>Usertype</label>
+                       <select name="update_usertype" class="form-control">
+                           <option value="admin">Admin</option>
+                           <option value="user">User</option>
+                       </select>
                     </div>
                     <a href="userregister.php" class="btn btn-success">Cancel</a>
                     <button type="submit" name="updatebtn" class="btn btn-info"> Update </button>

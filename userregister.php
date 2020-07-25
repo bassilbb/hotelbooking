@@ -45,6 +45,7 @@ include('includes/navbar.php');
                 <label>Confrim Passowrd</label>
                 <input type="text" name="confirmpassword" class="form-control" placeholder="Enter Confirmpassword" re>
             </div>
+            <input type="hidden" name="usertype" value="admin" >
             </div>
           </div>
       <div class="modal-footer">
@@ -92,9 +93,10 @@ include('includes/navbar.php');
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>USERNAME</th>
+                            <th>USER NAME</th>
                             <th>EMAIL</th>
                             <th>PASSWORD</th>
+                            <th>USERS ROLES</th>
                             <th>EDIT</th>
                             <th>DELETE</th>
                         </tr>
@@ -112,6 +114,7 @@ include('includes/navbar.php');
                             <td><?php echo $row ['name'];?></td>
                             <td><?php echo $row ['email'];?></td>
                             <td><?php echo $row ['password'];?></td>
+                            <td><?php echo $row ['usertype'];?></td>
                             <td>
                               <form action="useredit.php" method="POST">
                                 <input type="hidden" name="edit_id"  value="<?php echo $row ['id'];?>">

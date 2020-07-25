@@ -13,14 +13,15 @@ if(isset($_POST['registerbtn']))
     $email =$_POST['email'];
     $password =$_POST['password'];
     $confirmpassword =$_POST['confirmpassword'];
+    $usertype =$_POST['usertype'];
 
  if($password === $confirmpassword)
  {
-     $query = "INSERT INTO regadmin (name, email, password)
-     VALUES ('$name', '$email','$password')";  
+     $query = "INSERT INTO regadmin (name, email, password, confirmpassword,usertype)
+     VALUES ('$name', '$email','$password','$confirmpassword','$usertype')"; 
+     //echo($query);exit; 
      $query_run = mysqli_query($conn,$query);     
      
-
      if($query_run)
      {
          $_SESSION['success'] = "New Admin User Registered";
@@ -33,7 +34,7 @@ if(isset($_POST['registerbtn']))
     }
      else{
          $_SESSION['status'] = "Password and Confirm Password Does Not Match";
-         header('Location: admin.php');
+         header('Location: userregister.php');
     }
 
 }

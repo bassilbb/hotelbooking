@@ -58,7 +58,7 @@
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Login Screens:</h6>
       <a class="collapse-item" href="viewreservation.php">view Reservation</a>
-      <a class="collapse-item" href="editreservation.php">Eidt Reservation</a>
+      <a class="collapse-item" href="editreservation.php">Reschedule Reservation</a>
       <div class="collapse-divider"></div>
     </div>
   </div>

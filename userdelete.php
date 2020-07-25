@@ -18,7 +18,7 @@ if(isset($_POST['delete_btn']))
     }
     else
     {
-        $_SESSION['success'] = "Your Data Is Not Deleted";
+        $_SESSION['status'] = "Your Data Is Not Deleted";
         header('Location: userregister.php');
     }
 }

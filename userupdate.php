@@ -7,9 +7,10 @@ include('db.php');
         $name = $_POST['edit_name'];
         $email = $_POST['edit_email'];
         $password = $_POST['edit_password'];
+        $usertypeupdate = $_POST['update_usertype'];
         // $conn = mysqli_connect('localhost', 'root', '', 'hoteldb');
 
-        $query = "UPDATE regadmin SET name='$name', email='$email',password='$password' WHERE id='$id'";
+        $query = "UPDATE regadmin SET name='$name', email='$email',password='$password', usertype='$usertypeupdate' WHERE id='$id'";
         $query_run = mysqli_query($conn,$query);
 
         if($query_run)

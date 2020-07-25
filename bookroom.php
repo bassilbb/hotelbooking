@@ -1,4 +1,11 @@
+<?php
+include('db.php');
 
+$color1 = "lightblue";
+$color2 = "Ivory";
+$color = $color1;
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -74,6 +81,7 @@
                                             <label class="control-label required" for="numberofpersons">Number of Persons:</label>
                                             <div class="select">
                                                 <select id="numberofpersons" name="numberofpersons" class="form-control">
+                                                    <option value="01">select no of guest</option>
                                                     <option value="01">01</option>
                                                     <option value="02">02</option>
                                                     <option value="03">03</option>
@@ -89,10 +97,16 @@
                                             <div class="select">
                                                 <select id="budgets" name="budgets" class="form-control">
                                                     <option value="">select rooms</option>
-                                                    <option value="standard roon">Standard 1 to 2 Guest</option>
-                                                    <option value="family room">Family  1 to 4 Guest</option>
-                                                    <option value="private room">Private 1 to 2 Guest</option>
-                                                    <option value="mix dorm">mix dorm 1 to 6 Guest</option>
+                                                    <?php 
+                                                    $query=mysqli_query($conn,"select * from rooms");
+                                                    while($row=mysqli_fetch_array($query))
+                                                    {
+                                                        $color == $color1 ? $color = $color2 : $color = $color1;
+                                                        $name = $row['name'];
+                                                        echo "<option value='$name'style='background:$color;'>$name</option>";
+                                                        
+                                                    }
+                                                    ?>
                                                 </select>
                                             </div>
                                         </div>
@@ -119,30 +133,70 @@
                                             <input id="email" type="text" name="email" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="phone"> Phone</label>
                                             <input id="phone" type="text" name="phone" placeholder="" class="form-control" required>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                        <div class="form-group">
-                                            <label class="control-label" for="country">Country</label>
-                                            <input id="country" type="text" name="country" placeholder="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                        <div class="form-group">
-                                            <label class="control-label" for="city">City</label>
-                                            <input id="city" type="text" name="city" placeholder="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="zipcode">Zipcode</label>
-                                            <input id="zipcode" type="text" name="zipcode" placeholder  ="" class="form-control"  size="1" required>
+                                            <input id="zipcode" type="hidden"   class="form-control" placeholder="" size="1" required>
+                                            <select id="country" name="country" class="form-control">
+                                                    <option value="">select zipcode</option>
+                                                    <?php 
+                                                    $query=mysqli_query($conn,"select * from country");
+                                                    while($row=mysqli_fetch_array($query))
+                                                    {
+                                                        $color == $color1 ? $color = $color2 : $color = $color1;
+                                                        $name = $row['name'];
+                                                        echo "<option value='$name' style='background:$color;'>$name</option>"; 
+                                                    }
+                                                    ?>
+                                                </select>
                                         </div>
                                     </div>
+                                
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label required" for="select">Country</label>
+                                            <div class="select">
+                                                <select id="country" name="country" class="form-control">
+                                                    <option value="">select country</option>
+                                                    <?php 
+                                                    $query=mysqli_query($conn,"select * from country");
+                                                    while($row=mysqli_fetch_array($query))
+                                                    {
+                                                        $color == $color1 ? $color = $color2 : $color = $color1;
+                                                        $name = $row['name'];
+                                                        echo "<option value='$name' style='background:$color;'>$name</option>";  
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label required" for="select">Cites</label>
+                                            <div class="select">
+                                                <select id="cities" name="city" class="form-control">
+                                                <option value="">select city</option>
+                                                    <?php 
+                                                    $query=mysqli_query($conn,"select * from cities");
+                                                    while($row=mysqli_fetch_array($query))
+                                                    {
+                                                        $color == $color1 ? $color = $color2 : $color = $color1;
+                                                        $name = $row['name'];
+                                                        echo "<option value='$name' style='background:$color;'>$name</option>";    
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="roomrequirements"> Room Requirements</label>
