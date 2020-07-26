@@ -146,12 +146,12 @@ $color = $color1;
                                             <select id="country" name="country" class="form-control">
                                                     <option value="">select zipcode</option>
                                                     <?php 
-                                                    $query=mysqli_query($conn,"select * from country");
+                                                    $query=mysqli_query($conn,"select * from zipcode");
                                                     while($row=mysqli_fetch_array($query))
                                                     {
                                                         $color == $color1 ? $color = $color2 : $color = $color1;
-                                                        $name = $row['name'];
-                                                        echo "<option value='$name' style='background:$color;'>$name</option>"; 
+                                                        $zipname = $row['zipname'];
+                                                        echo "<option value='$zipname' style='background:$color;'>$zipname</option>"; 
                                                     }
                                                     ?>
                                                 </select>
